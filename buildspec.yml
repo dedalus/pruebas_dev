@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "entered the pre-build phase"
+  build:
+    commands:
+      - echo "Entered the build phase"
+      - npm install
+  post_build:
+    commands:
+      - echo "Entered the post-build phase"
+artifacts:
+  files:
+    - "**/*"
